@@ -32,6 +32,8 @@ module.exports = {
     // Validate props indentation in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md
     'react/jsx-indent-props': [2, 2],
+    // this option validates a specific indentation style for JSX.
+    'react/jsx-indent': [2, 2],
     // Validate JSX has key prop when in array or iterator
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
     'react/jsx-key': 2,
