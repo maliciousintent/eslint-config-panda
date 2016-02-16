@@ -1,7 +1,4 @@
 module.exports = {
-  'plugins': [
-    'sorting',
-  ],
   'rules': {
     // enforce spacing inside array brackets
     'array-bracket-spacing': [2, 'never'],
