@@ -1,0 +1,25 @@
+{
+  "name": "eslint-config-panda",
+  "version": "0.1.0",
+  "description": "Pandas's ESLint config, forked from airbnb's config",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/plasticpanda/eslint-config-panda"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript"
+  ],
+  "author": "Simone Lusenti @lanzone31",
+  "license": "MIT",
+  "devDependencies": {},
+  "peerDependencies": {
+    "eslint": "^2",
+    "eslint-plugin-react": "^3.16.1"
+  }
+}
