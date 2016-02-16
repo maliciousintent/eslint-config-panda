@@ -20,16 +20,16 @@ var es6 = require('./rules/es6');
 var strict = require('./rules/strict');
 var react = require('./rules/react');
 
-Object.assign(config,
-  bestPractices,
-  errors,
-  legacy,
-  node,
-  style,
-  variables,
-  es6,
-  strict,
-  react
+Object.assign(config.rules,
+  bestPractices.rules,
+  errors.rules,
+  legacy.rules,
+  node.rules,
+  style.rules,
+  variables.rules,
+  es6.rules,
+  strict.rules,
+  react.rules
 );
 
 
