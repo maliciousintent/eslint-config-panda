@@ -1,4 +1,7 @@
 module.exports = {
+  'plugins': [
+    'sorting',
+  ],
   'rules': {
     // enforce spacing inside array brackets
     'array-bracket-spacing': [2, 'never'],
@@ -98,6 +101,10 @@ module.exports = {
     'semi-spacing': [2, { 'before': false, 'after': true }],
     // require or disallow use of semicolons instead of ASI
     'semi': [2, 'always'],
+    // require property names in object literals to be sorted alphabetically.
+    'sorting/sort-object-props': [1, { ignoreCase: false, ignoreMethods: false }],
+    // sort import statements
+    'sort-imports': [1],
     // sort variables within the same declaration block
     'sort-vars': 2,
     // require a space before certain keywords

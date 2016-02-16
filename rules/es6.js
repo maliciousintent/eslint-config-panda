@@ -34,6 +34,8 @@ module.exports = {
     'constructor-super': 2,
     // enforce the spacing around the * in generator functions
     'generator-star-spacing': 0,
+    // no arrow functions in if, while etc...
+    'no-confusing-arrow': 2,
     // disallow modifying variables of class declarations
     'no-class-assign': 2,
     // disallow modifying variables that are declared using const
