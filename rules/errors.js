@@ -6,6 +6,8 @@ module.exports = {
     'no-cond-assign': [2, 'always'],
     // disallow use of console
     'no-console': 1,
+    // disallow Labeled Statements
+    'no-labels': 2,
     // disallow use of constant expressions in conditions
     'no-constant-condition': 1,
     // disallow control characters in regular expressions

@@ -1,15 +1,5 @@
-module.exports = {
-  extends: [
-    'eslint-config-panda/rules/best-practices',
-    'eslint-config-panda/rules/errors',
-    'eslint-config-panda/rules/legacy',
-    'eslint-config-panda/rules/node',
-    'eslint-config-panda/rules/style',
-    'eslint-config-panda/rules/variables',
-    'eslint-config-panda/rules/es6',
-    'eslint-config-panda/rules/strict',
-    'eslint-config-panda/rules/react',
-  ].map(require.resolve),
+
+var config = {
   env: {
     browser: true,
     node: true,
@@ -19,3 +9,27 @@ module.exports = {
   },
   rules: {},
 };
+
+var bestPractices = require('./rules/best-practices');
+var errors = require('./rules/errors');
+var legacy = require('./rules/legacy');
+var node = require('./rules/node');
+var style = require('./rules/style');
+var variables = require('./rules/variables');
+var es6 = require('./rules/es6');
+var strict = require('./rules/strict');
+var react = require('./rules/react');
+
+Object.assign(config,
+  bestPractices,
+  errors,
+  legacy,
+  node,
+  style,
+  variables,
+  es6,
+  strict,
+  react
+);
+
+module.exports = config;

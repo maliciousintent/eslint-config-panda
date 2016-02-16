@@ -5,7 +5,7 @@ module.exports = {
     // enforce one true brace style
     'brace-style': [2, '1tbs', { 'allowSingleLine': true }],
     // require camel case names
-    'camelcase': [2, { 'properties': 'never' }],
+    'camelcase': [2],
     // enforce spacing before and after comma
     'comma-spacing': [2, { 'before': false, 'after': true }],
     // enforce one true comma style
@@ -39,24 +39,24 @@ module.exports = {
     // https://github.com/eslint/eslint/blob/master/docs/rules/max-len.md
     'max-len': [2, 100, 2, {
       'ignoreUrls': true,
-      'ignoreComments': false
+      'ignoreComments': true
     }],
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': 0,
     // require a capital letter for constructors
     'new-cap': [2, { 'newIsCap': true }],
     // disallow the omission of parentheses when invoking a constructor with no arguments
-    'new-parens': 0,
+    'new-parens': 2,
     // allow/disallow an empty newline after var statement
-    'newline-after-var': 0,
+    'newline-after-var': 2,
     // disallow use of the Array constructor
-    'no-array-constructor': 0,
+    'no-array-constructor': 2,
     // disallow use of the continue statement
     'no-continue': 0,
     // disallow comments inline after code
     'no-inline-comments': 0,
     // disallow if as the only statement in an else block
-    'no-lonely-if': 0,
+    'no-lonely-if': 2,
     // disallow mixed spaces and tabs for indentation
     'no-mixed-spaces-and-tabs': 2,
     // disallow multiple empty lines and only one newline at the end
@@ -72,7 +72,7 @@ module.exports = {
     // disallow trailing whitespace at the end of lines
     'no-trailing-spaces': 2,
     // disallow dangling underscores in identifiers
-    'no-underscore-dangle': 0,
+    'no-underscore-dangle': 2,
     // disallow the use of Boolean literals in conditional expressions
     // also, prefer `a || b` over `a ? a : b`
     // http://eslint.org/docs/rules/no-unneeded-ternary
@@ -99,7 +99,7 @@ module.exports = {
     // require or disallow use of semicolons instead of ASI
     'semi': [2, 'always'],
     // sort variables within the same declaration block
-    'sort-vars': 0,
+    'sort-vars': 2,
     // require a space before certain keywords
     'keyword-spacing': [2, 'always'],
     // require or disallow space before blocks
@@ -119,6 +119,6 @@ module.exports = {
       'markers': ['=', '!']           // space here to support sprockets directives
     }],
     // require regex literals to be wrapped in parentheses
-    'wrap-regex': 0
+    'wrap-regex': 2
   }
 };

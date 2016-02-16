@@ -7,8 +7,8 @@ module.exports = {
     // specify the maximum number of statement allowed in a function
     'max-statements': [0, 10],
     // disallow use of bitwise operators
-    'no-bitwise': 0,
+    'no-bitwise': 2,
     // disallow use of unary operators, ++ and --
-    'no-plusplus': 0
+    'no-plusplus': 2
   }
 };
