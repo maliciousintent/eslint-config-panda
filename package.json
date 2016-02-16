@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-panda",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Pandas's ESLint config, forked from airbnb's config",
   "main": "index.js",
   "scripts": {},
